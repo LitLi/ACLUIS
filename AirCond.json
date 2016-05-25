@@ -1,0 +1,275 @@
+{
+  "luis_schema_version": "1.2.0",
+  "name": "Haier AC LUIS",
+  "desc": "LUIS Application in Chinese Environment.",
+  "culture": "zh-cn",
+  "intents": [
+    {
+      "Name": "调高温度",
+      "Children": []
+    },
+    {
+      "Name": "温度设定",
+      "Children": []
+    },
+    {
+      "Name": "天气查询",
+      "Children": []
+    },
+    {
+      "Name": "None",
+      "Children": []
+    },
+    {
+      "Name": "调低温度",
+      "Children": []
+    }
+  ],
+  "entities": [
+    {
+      "Name": "地点",
+      "Children": []
+    }
+  ],
+  "bing_entities": [
+    "temperature",
+    "datetime"
+  ],
+  "actions": [
+    {
+      "actionName": "温度设定",
+      "intentName": "温度设定",
+      "actionParameters": []
+    }
+  ],
+  "model_features": [
+    {
+      "name": "共享提高温度",
+      "mode": true,
+      "words": "温度有点低,调高",
+      "activated": true
+    },
+    {
+      "name": "共享调低温度",
+      "mode": true,
+      "words": "温度有点高,调低,感冒",
+      "activated": true
+    },
+    {
+      "name": "共享温度设定",
+      "mode": true,
+      "words": "调低至,调高至,调高到,调低到,温度设定",
+      "activated": true
+    },
+    {
+      "name": "地点",
+      "mode": true,
+      "words": "北京,上海,天津,重庆,石家庄,济南,青岛,太原,沈阳,大连,长春,哈尔滨,呼和浩特,地点",
+      "activated": true
+    }
+  ],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "请把温度调到23度",
+      "intent": "温度设定",
+      "entities": []
+    },
+    {
+      "text": "23度",
+      "intent": "温度设定",
+      "entities": []
+    },
+    {
+      "text": "30度",
+      "intent": "温度设定",
+      "entities": []
+    },
+    {
+      "text": "温度调到30度",
+      "intent": "温度设定",
+      "entities": []
+    },
+    {
+      "text": "25度",
+      "intent": "温度设定",
+      "entities": []
+    },
+    {
+      "text": "温度调到14度",
+      "intent": "温度设定",
+      "entities": []
+    },
+    {
+      "text": "Book Flight to Paris",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "book flight to beijing",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "book flight to Beijing",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "调整温度到23度",
+      "intent": "温度设定",
+      "entities": []
+    },
+    {
+      "text": "升高5度",
+      "intent": "温度设定",
+      "entities": []
+    },
+    {
+      "text": "调整温度23度2",
+      "intent": "温度设定",
+      "entities": []
+    },
+    {
+      "text": "Book flight to Beijng",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "book flight to Paris",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "帮我订去北京的机票",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "今天天气怎么样",
+      "intent": "天气查询",
+      "entities": []
+    },
+    {
+      "text": "今天天气",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "明天天气",
+      "intent": "天气查询",
+      "entities": []
+    },
+    {
+      "text": "明天天气怎么样",
+      "intent": "天气查询",
+      "entities": []
+    },
+    {
+      "text": "调整温度到25度",
+      "intent": "温度设定",
+      "entities": []
+    },
+    {
+      "text": "调高5度",
+      "intent": "调高温度",
+      "entities": []
+    },
+    {
+      "text": "温度调低5度",
+      "intent": "调低温度",
+      "entities": []
+    },
+    {
+      "text": "明天昆明天气怎么样",
+      "intent": "天气查询",
+      "entities": [
+        {
+          "entity": "地点",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "地点",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "明天上海天气怎么样",
+      "intent": "天气查询",
+      "entities": [
+        {
+          "entity": "地点",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "地点",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "今天北京天气怎么样",
+      "intent": "天气查询",
+      "entities": [
+        {
+          "entity": "地点",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "明天青岛天气怎么样",
+      "intent": "天气查询",
+      "entities": [
+        {
+          "entity": "地点",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "地点",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "明天北京天气怎么样",
+      "intent": "天气查询",
+      "entities": [
+        {
+          "entity": "地点",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "后天天气怎么样",
+      "intent": "天气查询",
+      "entities": []
+    },
+    {
+      "text": "今天冷吗",
+      "intent": "天气查询",
+      "entities": []
+    },
+    {
+      "text": "明天呼和浩特天气怎么样",
+      "intent": "天气查询",
+      "entities": [
+        {
+          "entity": "地点",
+          "startPos": 2,
+          "endPos": 5
+        }
+      ]
+    }
+  ]
+}
