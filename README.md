@@ -6,6 +6,7 @@
 ###Step1. 开发环境就绪 
 * 本地开发环境Eclipse
 * LUIS应用导入
+![LUIS APP发布]{https://github.com/LitLi/ACLUIS/blob/master/Appsetting%26Publish.PNG}
 ###Step2. Run Demo
 
 * Dowload Picture Transfer.zip file and unzip it, open it in Visual Studio
