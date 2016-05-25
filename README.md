@@ -5,7 +5,7 @@
 
 ###Step1. 开发环境就绪 
 * 本地开发环境Eclipse
-* 访问http://luis.ai，将AirCond.json文件导入到LUIS Studio中
+* 访问(http://luis.ai) ,将AirCond.json文件导入到LUIS Studio中
 * 可以根据需要调整LUIS的Intent/Entity等定义，训练后，选择publish 应用，确认发布
 * 发布后可以点击App Settings，如图
 
